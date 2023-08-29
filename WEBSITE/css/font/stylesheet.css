@@ -1,0 +1,8 @@
+
+@font-face {
+    font-family: 'Gabriola';
+    src: local('Gabriola'),
+		url('gabriola.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
