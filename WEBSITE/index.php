@@ -53,10 +53,14 @@ if (!file_exists($bodyFile)){
 // BG text translations.
 $texts_bg = [
     "HOME" => "НАЧАЛО",
-    "BIOGRAPHY" => "БИОГРАФИЯ",
-    "GALLERY" => "ГАЛЕРИЯ",
+    "ABOUT" => "ВАСИЛ ТОСЕВ",
+    "YAMA" => "ЙОГА ЦЕНТЪР ЯМА",
+    "AYLYAK" => "ЙОГА КЛУБ АЙЛЯЦИТЕ",
+    "SARAFOVO" => "ЙОГА ЛАГЕР САРАФОВО",
+    "DERVISH" => "ДЕРВИШКИ ТАНЦ",
+    "SUFI" => "МЪДРОСТТА НА СУФИТЕ",
     "VIDEO" => "ВИДЕО",
-    "MEDIA" => "СТАТИИ",
+    "BOOK" => "КНИГА",
     "CONTACTS" => "КОНТАКТИ"
 ];
 
@@ -81,11 +85,7 @@ function ln($key)
 
 <head>
 	
-    <?php if ($lang=='bg') {?>
-        <title>Сабина Йорданова - исторически и съвременен фагот</title>
-	<?php } else {?>
-        <title>Sabina Yordanova - historical and modern bassoon</title>
-	<?php } ?>
+    <title>Васил Тосев - йога инструктор и дервиш</title>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -127,17 +127,18 @@ function ln($key)
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		  <ul class="navbar-nav mb-2 mb-lg-0 justify-content-center w-100">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo "$baseUrl/$lang/home";?>"><?php ln("HOME"); ?></a></li>
-				<li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo "$baseUrl/$lang/bio";?>"><?php ln("BIOGRAPHY"); ?></a></li>
-				<li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo "$baseUrl/$lang/gallery";?>"><?php ln("GALLERY"); ?></a></li>
-				<li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo "$baseUrl/$lang/video";?>"><?php ln("VIDEO"); ?></a></li>
-				<li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo "$baseUrl/$lang/media";?>"><?php ln("MEDIA"); ?></a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo "$baseUrl/$lang/#contacts";?>"><?php ln("CONTACTS"); ?></a></li>
-	<?php if ($lang=='bg') {?>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo "$baseUrl/en/$page";?>">ENGLISH</a></li>
-	<?php } else {?>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo "$baseUrl/bg/$page";?>">БЪЛГАРСКИ</a></li>
-	<?php } ?>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="home">НАЧАЛО</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="vasiltosev">ВАСИЛ ТОСЕВ</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="yama">ЙОГА ЦЕНТЪР ЯМА</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="aylyaci">ЙОГА КЛУБ АЙЛЯЦИТЕ</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="sarafovo">ЙОГА ЛАГЕР САРАФОВО</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="dervish">ДЕРВИШКИ ТАНЦ</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="sufi">МЪДРОСТТА НА СУФИТЕ</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="video">ВИДЕО</a></li>
+				<li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery">ГАЛЕРИЯ</a></li>
+				<li class="nav-item"><a class="nav-link active" aria-current="page" href="book">КНИГА</a></li>
+				<li class="nav-item"><a class="nav-link active" aria-current="page" href="health">ЗДРАВЕ</a></li>
+				<li class="nav-item"><a class="nav-link active" aria-current="page" href="contact">КОНТАКТИ</a></li>
 				
 		  </ul>
 		</div>
@@ -147,7 +148,7 @@ function ln($key)
     <div class="header">
         <div class="container">
             <div class="header-container">
-                <img src="images/header.jpg">
+                <img src="Vasil-Tosev-home.jpg">
             </div>
         </div>
     </div>
